@@ -1,23 +1,26 @@
 import React from "react"
 import {
-  SafeAreaView,
-    View,
-    Text,
-    Button
+  SafeAreaView, Button, StyleSheet
 } from "react-native"
+
+import {AppPro} from "./appPro";
 
 function App() {
   return (
-      <SafeAreaView>
-        <View>
-          <Text>Hello Word</Text>
-          <Text>Hello Word</Text>
-          <Text>Hello Word</Text>
-          <Button title="This is a Button" onPress={() => {alert("Button pressed")}}/>
-        </View>
+      <SafeAreaView style={styles.appContainer}>
+          <AppPro/>
+          <Button title="Hello" onPress={() => {alert("Hello World!")}} />
+
       </SafeAreaView>
 
   )
 }
+
+const styles = StyleSheet.create({
+    appContainer: {
+        flex: 1,
+        flexDirection: "column",
+    }
+})
 
 export default App
