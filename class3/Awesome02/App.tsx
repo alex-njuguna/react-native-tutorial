@@ -5,7 +5,7 @@ import {
     View,
     StyleSheet
 } from "react-native";
-import {ElevatedCards, FlatCards} from "./components";
+import {ElevatedCards, FancyCard, FlatCards} from "./components";
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
           <View>
             <FlatCards/>
               <ElevatedCards/>
+              <FancyCard/>
           </View>
         </ScrollView>
       </SafeAreaView>

@@ -1,4 +1,5 @@
 import FlatCards from "./flatCards";
 import ElevatedCards from "./elevatedCards";
+import FancyCard from "./fancyCard";
 
-export {FlatCards, ElevatedCards};
+export {FlatCards, ElevatedCards, FancyCard };
