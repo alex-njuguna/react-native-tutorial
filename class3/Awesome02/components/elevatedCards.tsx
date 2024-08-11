@@ -5,7 +5,7 @@ export default function ElevatedCards() {
     return (
         <View>
             <Text style={styles.headingText}>Elevated Cards</Text>
-            <ScrollView style={styles.container} horizontal={true}>
+            <ScrollView style={styles.container} horizontal={true} showsHorizontalScrollIndicator={false}>
                 <View style={[styles.card, styles.elevatedCard]}>
                     <Text>1</Text>
                 </View>

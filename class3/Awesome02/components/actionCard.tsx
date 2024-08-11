@@ -22,10 +22,15 @@ export default function ActionCard() {
                         concepts and skills, ensuring a thorough understanding before progression.
                     </Text>
                 </View>
+                <View style={styles.cardFooter}>
+                    <TouchableOpacity  onPress={() => openWebsite("https://alex-njuguna.vercel.app/posts/masterly-based-learning-empowering-mastery-in-educ/")}>
+                        <Text style={styles.socialLinks}>Read more</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity  onLongPress={() => {alert("Follow button pressed")}}>
+                        <Text style={styles.socialLinks}>Follow me</Text>
+                    </TouchableOpacity>
+                </View>
 
-                <TouchableOpacity onPress={() => openWebsite("https://alex-njuguna.vercel.app/posts/masterly-based-learning-empowering-mastery-in-educ/")}>
-                    <Text style={styles.cardFooter}>Read more</Text>
-                </TouchableOpacity>
 
             </View>
         </View>
@@ -55,6 +60,7 @@ const styles = StyleSheet.create({
         shadowRadius: 5,
     },
     headerText: {
+        marginHorizontal: "auto",
         fontSize: 20,
         fontWeight: "bold",
         marginVertical: 10,
@@ -69,10 +75,18 @@ const styles = StyleSheet.create({
         marginVertical: 5
     },
     cardFooter: {
-        fontSize: 16,
-        color: "blue"
+        margin: 8,
+        flex: 1,
+        flexDirection: "row",
+        justifyContent: "space-evenly"
     },
     socialLinks: {
-
+        fontSize: 16,
+        color: "white",
+        backgroundColor: "purple",
+        paddingHorizontal: 20,
+        paddingVertical: 8,
+        borderRadius: 8,
+        elevation: 3,
     }
 })
