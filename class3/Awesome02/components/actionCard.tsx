@@ -26,7 +26,7 @@ export default function ActionCard() {
                     <TouchableOpacity  onPress={() => openWebsite("https://alex-njuguna.vercel.app/posts/masterly-based-learning-empowering-mastery-in-educ/")}>
                         <Text style={styles.socialLinks}>Read more</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity  onLongPress={() => {alert("Follow button pressed")}}>
+                    <TouchableOpacity  onPress={() => openWebsite("https://x.com/alexkienjeku")}>
                         <Text style={styles.socialLinks}>Follow me</Text>
                     </TouchableOpacity>
                 </View>
